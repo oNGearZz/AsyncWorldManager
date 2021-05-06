@@ -32,26 +32,13 @@
       <scope>compile</scope>
     </dependency>
 
-    <!-- WorldEdit Dependency -->
-    <dependency>
-      <groupId>com.sk89q.worldedit</groupId>
-      <artifactId>worldedit-core</artifactId>
-      <version>7.0.0-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <!-- FAWE-API Dependency -->
-    <dependency>
-      <groupId>com.boydti</groupId>
-      <artifactId>fawe-api</artifactId>
-      <version>latest</version>
-    </dependency>
-
     <!-- FAWE-Bukkit Dependency -->
     <dependency>
       <groupId>com.intellectualsites.fawe</groupId>
       <artifactId>FAWE-Bukkit</artifactId>
-      <version>1.16-326</version>
+      <version>21.03.26-b67f782-1287-22.3.10</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/internalRepo/FastAsyncWorldEdit-bukkit-21.03.26-b67f782-1287-22.3.10.jar</systemPath>
     </dependency>
 
   </dependencies>

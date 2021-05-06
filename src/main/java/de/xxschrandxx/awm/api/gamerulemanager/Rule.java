@@ -10,7 +10,7 @@ import com.google.common.base.Preconditions;
  *
  * @param <T> The class to use as Object
  */
-public class Rule<T> extends v1_16_0 {
+public class Rule<T> extends v1_17_0 {
   
   private static Map<String, Rule<?>> gameRules = new HashMap<String, Rule<?>>();
 
@@ -56,6 +56,13 @@ public class Rule<T> extends v1_16_0 {
     return (Rule[])gameRules.values().toArray(new Rule[gameRules.size()]);
   }
   
+  /**
+   * A Gamerule for AWM.
+   * @param name The Name for the Gamerule.
+   * @param clazz The Class for the Gamerule.
+   * @param defaultvalue The default value for the Gamerule.
+   * @param remove Weather this Gamerule should be removed.
+   */
   public Rule(String name, Class<T> clazz, Object defaultvalue, boolean remove) {
     Preconditions.checkNotNull(name, "Name cannot be null");
     Preconditions.checkNotNull(clazz, "GameRule type cannot be null");
